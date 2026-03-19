@@ -5,3 +5,7 @@ __pycache__/
 datasets/
 checkpoints/
 *.pth
+*.mp4
+*.jpg
+*.png
+*.pth.tar
