@@ -4,7 +4,7 @@
 
 This project explores the use of CycleGAN for generating synthetic winter driving data from summer scenes, with the goal of improving robustness in autonomous driving systems under adverse weather conditions.
 
----
+
 
 ##  Problem Statement
 
@@ -16,7 +16,7 @@ However:
 
  This project investigates whether **synthetic winter data** can be generated from summer images using **unpaired image-to-image translation (CycleGAN)**.
 
----
+
 
 ##  Approach
 
@@ -30,7 +30,7 @@ We use **CycleGAN**, which enables translation between domains without requiring
   - Cycle Consistency Loss
   - Identity Loss
 
----
+
 
 ## Dataset
 
@@ -49,7 +49,7 @@ Since no suitable dataset was found, data was **manually collected from YouTube 
 - Removal of redundant frames
 - Higher resolution (512×512)
 
----
+
 
 ## ⚙️ Training Setup
 
@@ -61,7 +61,7 @@ Since no suitable dataset was found, data was **manually collected from YouTube 
 | Epochs | 100 | 100 |
 | Batch Size | 1 | 1 |
 
----
+
 
 ##  Results
 
@@ -77,7 +77,7 @@ Since no suitable dataset was found, data was **manually collected from YouTube 
 - **~9% improvement in FID**
 - **~26% improvement in SSIM (structure preservation)**
 
----
+
 
 ##  Downstream Validation
 
@@ -91,7 +91,7 @@ We evaluate the usefulness of generated images using a pretrained **Faster R-CNN
 
  V2 preserves objects (cars, signs, etc.) significantly better.
 
----
+
 
 ##  Qualitative Results
 
@@ -115,14 +115,14 @@ Due to size limitations, full outputs and trained models are hosted on Google Dr
  **Drive Link (All Outputs & Models):**  
 https://drive.google.com/drive/u/0/folders/1byolCKUKlCEtXKfnLoEDpXfkeWtv0-7V
 
----
+
 
 ##  Notebooks
 
 - `Colab_Training.ipynb` → Training pipeline
 - `Colab_Evaluate.ipynb` → Evaluation + metrics
 
----
+
 
 ##  Limitations
 
@@ -131,7 +131,7 @@ https://drive.google.com/drive/u/0/folders/1byolCKUKlCEtXKfnLoEDpXfkeWtv0-7V
 - No semantic understanding (GAN learns patterns, not objects)
 - Some artifacts in generated textures
 
----
+
 
 ##  Future Work
 
@@ -140,7 +140,7 @@ https://drive.google.com/drive/u/0/folders/1byolCKUKlCEtXKfnLoEDpXfkeWtv0-7V
 - Diffusion-based models
 - Video consistency (temporal GANs)
 
----
+
 
 
 
