@@ -1,4 +1,4 @@
-![Sample Result](/sample.png)
+![Sample Result](/sample.jpg)
 
 #  Synthetic Winter: CycleGAN for Summer-to-Winter Translation
 
